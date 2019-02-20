@@ -1,0 +1,8 @@
+(sudo) Edit '/opt/ros/kinetic/share/turtlebot_description/urdf/turtlebot_properties.urdf.xacro'
+Change "cam_px" to 0.087 from -0.087
+
+(sudo) Edit /opt/ros/kinetic/share/turtlebot_description/urdf/stacks/hexagons.urdf.xacro'
+Line 108, in
+<xacro:macro name="stack_3d_sensor_pole" params="parent number x_loc y_loc z_loc">
+  <link name="pole_kinect_${number}_link">
+Change: <origin xyz="0 0 -0.01" rpy="0 0 0"/> to <origin xyz="0.174 0 -0.01" rpy="0 0 0"/>

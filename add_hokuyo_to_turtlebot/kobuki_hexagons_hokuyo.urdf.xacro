@@ -10,9 +10,9 @@
   <xacro:include filename="$(find kobuki_description)/urdf/kobuki.urdf.xacro" />
   <xacro:include filename="$(find turtlebot_description)/urdf/stacks/hexagons.urdf.xacro"/>
   <xacro:include filename="$(find turtlebot_description)/urdf/sensors/hokuyo.urdf.xacro"/>
-
+  <xacro:include filename="$(find turtlebot_description)/urdf/sensors/kinect.urdf.xacro"/>
   <kobuki/>
   <stack_hexagons parent="base_link"/>
   <sensor_hokuyo  parent="base_link"/>
-
+  <sensor_kinect  parent="base_link"/>
 </robot>
